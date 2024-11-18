@@ -1,0 +1,192 @@
+{
+    "tables": [
+        {
+            "table_name": "department",
+            "file_path": "department.csv",
+            "columns": [
+                {
+                    "column_name": "dnumber",
+                    "data_type": "CHAR(3)",
+                    "constraints": [
+                        "PRIMARY KEY"
+                    ]
+                },
+                {
+                    "column_name": "dname",
+                    "data_type": "CHAR(30)",
+                    "constraints": [
+                        "NOT NULL"
+                    ]
+                },
+                {
+                    "column_name": "mgrssn",
+                    "data_type": "CHAR(18)",
+                    "constraints": [
+                        "NOT NULL"
+                    ]
+                },
+                {
+                    "column_name": "mgrstartdate",
+                    "data_type": "CHAR(15)",
+                    "constraints": [
+                        "NOT NULL"
+                    ]
+                }
+            ],
+            "primary_key": "dnumber"
+        },
+        {
+            "table_name": "employee",
+            "file_path": "employee.csv",
+            "columns": [
+                {
+                    "column_name": "ssn",
+                    "data_type": "CHAR(18)",
+                    "constraints": [
+                        "PRIMARY KEY"
+                    ]
+                },
+                {
+                    "column_name": "name",
+                    "data_type": "CHAR(10)",
+                    "constraints": [
+                        "NOT NULL"
+                    ]
+                },
+                {
+                    "column_name": "bdate",
+                    "data_type": "CHAR(10)",
+                    "constraints": [
+                        "NOT NULL"
+                    ]
+                },
+                {
+                    "column_name": "address",
+                    "data_type": "CHAR(30)",
+                    "constraints": [
+                        "NOT NULL"
+                    ]
+                },
+                {
+                    "column_name": "sex",
+                    "data_type": "CHAR(2)",
+                    "constraints": [
+                        "NOT NULL"
+                    ]
+                },
+                {
+                    "column_name": "salary",
+                    "data_type": "FLOAT",
+                    "constraints": [
+                        "NOT NULL"
+                    ]
+                },
+                {
+                    "column_name": "superssn",
+                    "data_type": "CHAR(18)",
+                    "constraints": []
+                },
+                {
+                    "column_name": "dno",
+                    "data_type": "CHAR(3)",
+                    "constraints": [
+                        "NOT NULL"
+                    ]
+                }
+            ],
+            "primary_key": "ssn"
+        },
+        {
+            "table_name": "depart_location",
+            "file_path": "depart_location.csv",
+            "columns": [
+                {
+                    "column_name": "dnumber",
+                    "data_type": "CHAR(3)",
+                    "constraints": [
+                        "PRIMARY KEY"
+                    ]
+                },
+                {
+                    "column_name": "dlocation",
+                    "data_type": "CHAR(30)",
+                    "constraints": [
+                        "NOT NULL"
+                    ]
+                }
+            ],
+            "primary_key": "dnumber"
+        },
+        {
+            "table_name": "project",
+            "file_path": "project.csv",
+            "columns": [
+                {
+                    "column_name": "pnumber",
+                    "data_type": "CHAR(3)",
+                    "constraints": [
+                        "PRIMARY KEY"
+                    ]
+                },
+                {
+                    "column_name": "pname",
+                    "data_type": "CHAR(30)",
+                    "constraints": [
+                        "NOT NULL"
+                    ]
+                },
+                {
+                    "column_name": "plocation",
+                    "data_type": "CHAR(30)",
+                    "constraints": [
+                        "NOT NULL"
+                    ]
+                },
+                {
+                    "column_name": "dnum",
+                    "data_type": "CHAR(3)",
+                    "constraints": [
+                        "NOT NULL"
+                    ]
+                }
+            ],
+            "primary_key": "pnumber"
+        },
+        {
+            "table_name": "works_on",
+            "file_path": "works_on.csv",
+            "columns": [
+                {
+                    "column_name": "essn",
+                    "data_type": "CHAR(18)",
+                    "constraints": []
+                },
+                {
+                    "column_name": "pno",
+                    "data_type": "CHAR(3)",
+                    "constraints": []
+                },
+                {
+                    "column_name": "hours",
+                    "data_type": "INT",
+                    "constraints": [
+                        "NOT NULL"
+                    ]
+                },
+                {
+                    "column_name": "PRIMARY",
+                    "data_type": "KEY",
+                    "constraints": [
+                        "PRIMARY KEY"
+                    ]
+                },
+                {
+                    "column_name": "pno)",
+                    "data_type": "--",
+                    "constraints": []
+                }
+            ],
+            "primary_key": "PRIMARY"
+        }
+    ]
+}
